@@ -3,8 +3,8 @@ const LiveReloadPlugin = require('webpack-livereload-plugin'); //zdefiniowalismy
 
 module.exports = {
     entry : {
-        'js/out.js': './js/app.js',
-        'css/main.css~': './scss/main.scss'
+        'js/out.js': './js/app.js'
+        // 'css/main.css~': './scss/main.scss'
     },
     output : {
         path: __dirname+'/',
@@ -36,7 +36,7 @@ module.exports = {
         ]
     },
     plugins: [
-        new ExtractTextPlugin('./css/style.css'),
+        // new ExtractTextPlugin('./css/style-kopia.css'),
         new LiveReloadPlugin()
     ]
 

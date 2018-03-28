@@ -1,126 +1,148 @@
-/*mixiny, funkcje, zmienne*/
-$mobile: "(max-width: 600px)";
-$mobileLandscape: "(min-width: 750px) and (orientation: landscape)";
-$tablet: "(min-width: 768px) and (max-width: 1023px)"; 
-$desktop: "(min-width: 1024px)";
+// /*mixiny, funkcje, zmienne*/
+// $mobile: "(max-width: 600px)";
+// $mobileLandscape: "(min-width: 750px) and (orientation: landscape)";
+// $tablet: "(min-width: 768px) and (max-width: 1023px)"; 
+// $desktop: "(min-width: 1024px)";
 
 
-/*layout*/
-body {
-  background-image: url("../images/mountains.jpg");
-  background-position: center;
-  background-size: cover;
-}
-*, *::after, *::before {
-  content: "";
-  display: block;
-  clear: both;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  }
+// /*layout*/
 
-* {
-  margin: 0 auto;
-  padding: 0 auto;
-  box-sizing: border-box;
-}
 
-header {
-  // height: 15%;
-  background-color: red;
-  // align-items: center;
-  menu {
-    .headerMenu {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      .menu {
-        // width: 20%;
-        // height: 30px;
-        list-style-type: none;
-        // margin: 10px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-          position: relative;
-          display: inline-block;
-          outline: none;
-          margin: 15px 25px;
-          text-decoration: none;
-          letter-spacing: 1px;
-          text-shadow: 0 0 1px rgba(255,255,255,0.3);
-          font-size: 80%;
-          padding: 1px;
-          padding: 12px 10px 10px;
-	        color: #566473;
-	        text-shadow: none;
-          font-weight: 700;
-          font-size: 1.35em;
-          &:hover, &:focus {
-            outline: none;
-          }
-          &::before, &::after {
-            position: absolute;
-            top: 100%;
-	          left: 0;
-	          width: 100%;
-	          height: 3px;
-	          background: #566473;
-	          content: '';
-	          -webkit-transition: -webkit-transform 0.3s;
-	          -moz-transition: -moz-transform 0.3s;
-	          transition: transform 0.3s;
-	          -webkit-transform: scale(0.85);
-	          -moz-transform: scale(0.85);
-            transform: scale(0.85);  
-          }
-          &::after {
-            opacity: 0;
-            -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-            -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
-            transition: top 0.3s, opacity 0.3s, transform 0.3s;
-          }
-          &:hover::before, &:hover::after, &:focus::before, &:focus::after {
-            -webkit-transform: scale(1);
-            -moz-transform: scale(1);
-            transform: scale(1);
-          }
-          &:hover::after, &:focus::after {
-            top: 0%;
-            opacity: 1;
-          }
-        }
-      }
-    }
-  }
-}
+// *, *::after, *::before {
+//   content: "";
+//   display: block;
+//   clear: both;
+//   -webkit-box-sizing: border-box;
+//   -moz-box-sizing: border-box;
+//   box-sizing: border-box;
+//   }
 
-/*dla telefonu komórkowego*/
-@media #{$mobile} {
- 
-}
+// * {
+//   margin: 0 auto;
+//   padding: 0 auto;
+//   box-sizing: border-box;
+// }
 
-/*dla telefonu obróconego poziomo*/
-@media #{$mobileLandscape} {
+// header {
+//   // height: 15%;
+//   background-color: gray;
+//   // align-items: center;
+//   menu {
+//     .headerMenu {
+//       display: flex;
+//       flex-direction: row;
+//       justify-content: center;
+//       .menu {
+//         // width: 20%;
+//         // height: 30px;
+//         list-style-type: none;
+//         // margin: 10px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         a {
+//           position: relative;
+//           display: inline-block;
+//           outline: none;
+//           margin: 15px 25px;
+//           text-decoration: none;
+//           letter-spacing: 1px;
+//           text-shadow: 0 0 1px rgba(255,255,255,0.3);
+//           font-size: 80%;
+//           padding: 1px;
+//           padding: 12px 10px 10px;
+// 	        color: #566473;
+// 	        text-shadow: none;
+//           font-weight: 700;
+//           font-size: 1.35em;
+//           &:hover, &:focus {
+//             outline: none;
+//           }
+//           &::before, &::after {
+//             position: absolute;
+//             top: 100%;
+// 	          left: 0;
+// 	          width: 100%;
+// 	          height: 3px;
+// 	          background: #566473;
+// 	          content: '';
+// 	          -webkit-transition: -webkit-transform 0.3s;
+// 	          -moz-transition: -moz-transform 0.3s;
+// 	          transition: transform 0.3s;
+// 	          -webkit-transform: scale(0.85);
+// 	          -moz-transform: scale(0.85);
+//             transform: scale(0.85);  
+//           }
+//           &::after {
+//             opacity: 0;
+//             -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+//             -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
+//             transition: top 0.3s, opacity 0.3s, transform 0.3s;
+//           }
+//           &:hover::before, &:hover::after, &:focus::before, &:focus::after {
+//             -webkit-transform: scale(1);
+//             -moz-transform: scale(1);
+//             transform: scale(1);
+//           }
+//           &:hover::after, &:focus::after {
+//             top: 0%;
+//             opacity: 1;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// #choice {
+//   .button {
+//     border: 3px solid gray;
+//     width: 100px;
+//     height: 50px;
+//     background-color: gray;
+//     color: white;
+//     margin: 10px;
+//     align-self: center;
+//     align-items: center; 
+//     li {
+//       background-color: gray;
+//       height: 20px;
+//       width: 100px;
+//       border: 1px solid black;
+//     }
+//   }
+// }
+
+// /*dla telefonu komórkowego*/
+// @media #{$mobile} {
+//   #choice {
+//     display: flex;
+//     flex-direction: column;
+
+//   }
+// }
+
+// /*dla telefonu obróconego poziomo*/
+// @media #{$mobileLandscape} {
   
-}
+// }
 
-/*dla tabletu*/
-@media #{$tablet} {
+// /*dla tabletu*/
+// @media #{$tablet} {
 
-}
+// }
 
-/*dla desktopu*/
-@media #{$desktop} {
-  .list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  }
+// /*dla desktopu*/
+// @media #{$desktop} {
+//   #choice {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+  
+//   }
+//   }
 
 
 
-/*listy*/
+// /*listy*/
+
