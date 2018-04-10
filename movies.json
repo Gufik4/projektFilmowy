@@ -7,7 +7,8 @@
       "year": "1999",
       "years": "6",
       "nominations": [ "Golden globes", "Oscar"],
-      "images": "./img/1_american_beauty.jpg"
+      "images": "./img/1_american_beauty.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/American.Beauty"
     },
     {
       "id": 2,
@@ -16,7 +17,8 @@
       "year": "2000",
       "years": "5",
       "nominations": ["Golden globes", "Oscar"],
-      "images": "./img/2_gladiator.jpg"
+      "images": "./img/2_gladiator.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Gladiator"
     },
     {
       "id": 3,
@@ -25,7 +27,8 @@
       "year": "2001",
       "years": "5",
       "nominations": ["Golden globes", "Oscar"],
-      "images": "./img/3_beautiful_mind.jpg"
+      "images": "./img/3_beautiful_mind.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Piekny.Umysl"
     },
     {
       "id": 4,
@@ -34,7 +37,8 @@
       "year": "2002",
       "years": "5",
       "nominations": "Oscar",
-      "images": "./img/4_chicago.jpg"
+      "images": "./img/4_chicago.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Chicago"
     },
     {
       "id": 5,
@@ -43,7 +47,8 @@
       "year": "2003",
       "years": "5",
       "nominations": ["Golden globes", "Oscar"],
-      "images": "./img/5_lord_of_the_rings.jpg"
+      "images": "./img/5_lord_of_the_rings.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Powrot.Krola"
     },
     {
       "id": 6,
@@ -52,7 +57,8 @@
       "year": "2004",
       "years": "4",
       "nominations": "Oscar",
-      "images": "./img/6_million_dollar_baby.jpg"
+      "images": "./img/6_million_dollar_baby.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Za.Wszelka.Cene"
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "year": "2005",
       "years": "4",
       "nominations": "Oscar",
-      "images": "./img/7_crash.jpg"
+      "images": "./img/7_crash.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Miasto.Gniewu"
     },
     {
       "id": 8,
@@ -70,7 +77,8 @@
       "year": "2006",
       "years": "4",
       "nominations": "Oscar",
-      "images": "./img/8_the_departed.jpg"
+      "images": "./img/8_the_departed.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Infiltracja"
     },
     {
       "id": 9,
@@ -79,7 +87,8 @@
       "year": "2007",
       "years": "4",
       "nominations": "Oscar",
-      "images": "./img/9_no_country_for_old_men.jpg"
+      "images": "./img/9_no_country_for_old_men.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/To.Nie.Jest.Kraj.Dla.Starych.Ludzi"
     },
     {
       "id": 10,
@@ -88,7 +97,8 @@
       "year": "2008",
       "years": "3",
       "nominations": ["Golden globes", "Oscar"],
-      "images": "./img/10_slumdog_millionaire.jpg"
+      "images": "./img/10_slumdog_millionaire.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Slumdog.+Milioner+z+ulicy-2008-468296"
     },
     {
       "id": 11,
@@ -97,7 +107,8 @@
       "year": "2009",
       "years": "3",
       "nominations": "Oscar",
-      "images": "./img/11_the_hurt_locker.jpg"
+      "images": "./img/11_the_hurt_locker.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/The+Hurt+Locker.+W+pu%C5%82apce+wojny-2008-416984"
     },
     {
       "id": 12,
@@ -106,7 +117,8 @@
       "year": "2010",
       "years": "3",
       "nominations": "Oscar",
-      "images": "./img/12_the_king_speech.jpg"
+      "images": "./img/12_the_king_speech.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Jak+zosta%C4%87+kr%C3%B3lem-2010-539270"
     },
     {
       "id": 13,
@@ -115,7 +127,8 @@
       "year": "2011",
       "years": "3",
       "nominations": "Oscar",
-      "images": "./img/13_artist.jpg"
+      "images": "./img/13_artist.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Artysta-2011-589952"
     },
     {
       "id": 14,
@@ -124,7 +137,8 @@
       "year": "2012",
       "years": "2",
       "nominations": ["Golden globes", "Oscar"],
-      "images": "./img/14_argo.jpeg"
+      "images": "./img/14_argo.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Operacja+Argo-2012-614165"
     },
     {
       "id": 15,
@@ -133,7 +147,8 @@
       "year": "2013",
       "years": "2",
       "nominations": ["Golden globes", "Oscar"],
-      "images": "./img/15_12_years_a_slave.jpg"
+      "images": "./img/15_12_years_a_slave.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Zniewolony.+12+Years+a+Slave-2013-632419"
     },
     {
       "id": 16,
@@ -142,7 +157,8 @@
       "year": "2014",
       "years": "2",
       "nominations": "Oscar",
-      "images": "./img/16_birdman.jpg"
+      "images": "./img/16_birdman.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Birdman-2014-680709"
     },
     {
       "id": 17,
@@ -151,7 +167,8 @@
       "year": "2015",
       "years": "2",
       "nominations": "Oscar",
-      "images": "./img/17_spotlight.jpg"
+      "images": "./img/17_spotlight.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Spotlight-2015-723550"
     },
     {
       "id": 18,
@@ -160,7 +177,8 @@
       "year": "2016",
       "years": "1",
       "nominations": ["Golden globes", "Oscar"],
-      "images": "./img/18_moonlight.jpg"
+      "images": "./img/18_moonlight.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Moonlight-2016-759367"
     },
     {
       "id": 19,
@@ -169,7 +187,8 @@
       "year": "2017",
       "years": "1",
       "nominations": "Oscar",
-      "images": "./img/19_the_shape_of_water.jpg"
+      "images": "./img/19_the_shape_of_water.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Kszta%C5%82t+wody-2017-775970"
     },
     {
       "id": 20,
@@ -178,7 +197,8 @@
       "year": "2002",
       "years": "5",
       "nominations": "Golden globes",
-      "images": "./img/20_the_hours.jpg"
+      "images": "./img/20_the_hours.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Godziny"
     },
     {
       "id": 21,
@@ -187,7 +207,8 @@
       "year": "2004",
       "years": "4",
       "nominations": "Golden globes",
-      "images": "./img/21_the_aviator.jpg"
+      "images": "./img/21_the_aviator.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Aviator"
     },
     {
       "id": 22,
@@ -196,7 +217,9 @@
       "year": "2005",
       "years": "4",
       "nominations": "Golden globes",
-      "images": "./img/22_brokeback_mountain.jpg"
+      "images": "./img/22_brokeback_mountain.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Tajemnica.Brokeback.Mountain"
+ 
     },
     {
       "id": 23,
@@ -205,7 +228,8 @@
       "year": "2006",
       "years": "4",
       "nominations": "Golden globes",
-      "images": "./img/23_babel.jpg"
+      "images": "./img/23_babel.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Babel"
     },
     {
       "id": 24,
@@ -214,7 +238,8 @@
       "year": "2007",
       "years": "4",
       "nominations": "Golden globes",
-      "images": "./img/24_atonement.jpg"
+      "images": "./img/24_atonement.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Pokuta"
     },
     {
       "id": 25,
@@ -223,7 +248,8 @@
       "year": "2009",
       "years": "3",
       "nominations": "Golden globes",
-      "images": "./img/25_avatar.jpg"
+      "images": "./img/25_avatar.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Avatar"
     },
     {
       "id": 26,
@@ -232,7 +258,8 @@
       "year": "2010",
       "years": "3",
       "nominations": "Golden globes",
-      "images": "./img/26_the_social_network.jpg"
+      "images": "./img/26_the_social_network.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/The+Social+Network-2010-528258"
     },
     {
       "id": 27,
@@ -241,7 +268,8 @@
       "year": "2011",
       "years": "3",
       "nominations": "Golden globes",
-      "images": "./img/27_the_descendands.jpeg"
+      "images": "./img/27_the_descendands.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Spadkobiercy-2011-537189"
     },
     {
       "id": 28,
@@ -250,7 +278,8 @@
       "year": "2014",
       "years": "2",
       "nominations": "Golden globes",
-      "images": "./img/28_boyhood.jpg"
+      "images": "./img/28_boyhood.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Boyhood-2014-629125"
     },
     {
       "id": 29,
@@ -259,7 +288,8 @@
       "year": "2015",
       "years": "2",
       "nominations": "Golden globes",
-      "images": "./img/29_the_revenant.jpg"
+      "images": "./img/29_the_revenant.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Zjawa-2015-586583"
     },
     {
       "id": 30,
@@ -268,7 +298,8 @@
       "year": "2017",
       "years": "1",
       "nominations": "Golden globes",
-      "images": "./img/30_three_billboards.jpg"
+      "images": "./img/30_three_billboards.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Trzy+billboardy+za+Ebbing%2C+Missouri-2017-767406"
     },
     {
       "id": 31,
@@ -277,7 +308,8 @@
       "year": "2000",
       "years": "5",
       "nominations": "Cannes",
-      "images": "./img/31_dancer_in_the_dark.jpg"
+      "images": "./img/31_dancer_in_the_dark.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Tanczac.W.Ciemnosciach"
     },
     {
       "id": 32,
@@ -286,7 +318,8 @@
       "year": "2001",
       "years": "5",
       "nominations": "Cannes",
-      "images": "./img/32_la_stanza_del_figlio.jpg"
+      "images": "./img/32_la_stanza_del_figlio.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Pok%C3%B3j+syna-2001-34186"
     },
     {
       "id": 33,
@@ -295,7 +328,8 @@
       "year": "2002",
       "years": "5",
       "nominations": "Cannes",
-      "images": "./img/33_the_pianist.jpeg"
+      "images": "./img/33_the_pianist.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/Pianista"
     },
     {
       "id": 34,
@@ -304,7 +338,8 @@
       "year": "2003",
       "years": "5",
       "nominations": "Cannes",
-      "images": "./img/34_elephant.jpg"
+      "images": "./img/34_elephant.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Slon"
     },
     {
       "id": 35,
@@ -313,7 +348,8 @@
       "year": "2004",
       "years": "4",
       "nominations": "Cannes",
-      "images": "./img/35_fahrenheit.jpg"
+      "images": "./img/35_fahrenheit.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Fahrenheit.9.11"
     },
     {
       "id": 36,
@@ -322,7 +358,8 @@
       "year": "2005",
       "years": "4",
       "nominations": "Cannes",
-      "images": "./img/36_L'enfant.jpeg"
+      "images": "./img/36_L'enfant.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/Dziecko"
     },
     {
       "id": 37,
@@ -331,7 +368,8 @@
       "year": "2006",
       "years": "4",
       "nominations": "Cannes",
-      "images": "./img/37_the_wind_that_shakes_the_barley.jpg"
+      "images": "./img/37_the_wind_that_shakes_the_barley.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Wiatr.Buszujacy.W.Jeczmieniu"
     },
     {
       "id": 38,
@@ -340,7 +378,8 @@
       "year": "2007",
       "years": "4",
       "nominations": "Cannes",
-      "images": "./img/38_4_luni.jpeg"
+      "images": "./img/38_4_luni.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/4.Miesiace.3.Tygodnie.I.2.Dni"
     },
     {
       "id": 39,
@@ -349,7 +388,8 @@
       "year": "2008",
       "years": "3",
       "nominations": "Cannes",
-      "images": "./img/39_entre_les_murs.jpg"
+      "images": "./img/39_entre_les_murs.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Klasa-2008-449118"
     },
     {
       "id": 40,
@@ -358,7 +398,8 @@
       "year": "2009",
       "years": "3",
       "nominations": "Cannes",
-      "images": "./img/40_das_weisse_band.jpg"
+      "images": "./img/40_das_weisse_band.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Bia%C5%82a+wst%C4%85%C5%BCka-2009-467482"
     },
     {
       "id": 41,
@@ -367,7 +408,8 @@
       "year": "2010",
       "years": "3",
       "nominations": "Cannes",
-      "images": "./img/41_loong_boonmee.jpg"
+      "images": "./img/41_loong_boonmee.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Wujek+Boonmee%2C+kt%C3%B3ry+potrafi+przywo%C5%82a%C4%87+swoje+poprzednie+wcielenia-2010-563969"
     },
     {
       "id": 42,
@@ -376,7 +418,8 @@
       "year": "2011",
       "years": "3",
       "nominations": "Cannes",
-      "images": "./img/42_the_tree_of_life.jpg"
+      "images": "./img/42_the_tree_of_life.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Drzewo+%C5%BCycia-2011-273584"
     },
     {
       "id": 43,
@@ -385,7 +428,8 @@
       "year": "2012",
       "years": "2",
       "nominations": "Cannes",
-      "images": "./img/43_amour.jpeg"
+      "images": "./img/43_amour.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Mi%C5%82o%C5%9B%C4%87-2012-610244"
     },
     {
       "id": 44,
@@ -394,7 +438,8 @@
       "year": "2013",
       "years": "2",
       "nominations": "Cannes",
-      "images": "./img/44_la_vie_adele.jpg"
+      "images": "./img/44_la_vie_adele.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/%C5%BBycie+Adeli+%E2%80%93+Rozdzia%C5%82+1+i+2-2013-655740"
     },
     {
       "id": 45,
@@ -403,7 +448,8 @@
       "year": "2014",
       "years": "2",
       "nominations": "Cannes",
-      "images": "./img/45_kis_uykusu.jpeg"
+      "images": "./img/45_kis_uykusu.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Zimowy+sen-2014-684923"
     },
     {
       "id": 46,
@@ -412,7 +458,8 @@
       "year": "2015",
       "years": "2",
       "nominations": "Cannes",
-      "images": "./img/46_dheepan.jpeg"
+      "images": "./img/46_dheepan.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Imigranci-2015-731423"
     },
     {
       "id": 47,
@@ -421,7 +468,8 @@
       "year": "2016",
       "years": "1",
       "nominations": "Cannes",
-      "images": "./img/47_i_daniel_blake.jpg"
+      "images": "./img/47_i_daniel_blake.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Ja%2C+Daniel+Blake-2016-759290"
     },
     {
       "id": 48,
@@ -430,7 +478,8 @@
       "year": "2017",
       "years": "1",
       "nominations": "Cannes",
-      "images": "./img/48_the_square.jpg"
+      "images": "./img/48_the_square.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/The+Square-2017-786678"
     },
     {
       "id": 49,
@@ -438,7 +487,8 @@
       "type": "Comedy",
       "year": "2009",
       "years": "3",
-      "images": "./img/49_the_hangover.jpeg"
+      "images": "./img/49_the_hangover.jpeg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Kac+Vegas-2009-487211"
     },
     {
       "id": 50,
@@ -446,7 +496,8 @@
       "type": "Comedy",
       "year": "2001",
       "years": "5",
-      "images": "./img/50_shrek.jpg"
+      "images": "./img/50_shrek.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Shrek"
     },
     {
       "id": 51,
@@ -454,7 +505,8 @@
       "type": "Comedy",
       "year": "2002",
       "years": "5",
-      "images": "./img/51_men_in_black.jpg"
+      "images": "./img/51_men_in_black.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/2.Faceci.W.Czerni"
     },
     {
       "id": 52,
@@ -462,7 +514,8 @@
       "type": "Comedy",
       "year": "2002",
       "years": "5",
-      "images": "./img/52_ali_g_indahouse.jpg"
+      "images": "./img/52_ali_g_indahouse.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/Ali.G"
     },
     {
       "id": 53,
@@ -470,7 +523,8 @@
       "type": "Comedy",
       "year": "2000",
       "years": "5",
-      "images": "./img/53_road_trip.jpg"
+      "images": "./img/53_road_trip.jpg",
+      "urlFilmWeb": "http://www.filmweb.pl/film/Ostra+jazda-2000-972"
     }
   ]
-}
+ }

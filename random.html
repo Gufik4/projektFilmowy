@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FilmProjekt</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="src/css/extends.css">
+  <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+</head>
+
+<body>
+  <header>
+    <menu>
+      <ul class="headerMenu">
+        <li class="menu">
+          <a href="index.html">START</a>
+        </li>
+        <li id="random" class="menu active">
+          <a href="random.html">LOSUJ 3</a>
+        </li>
+        <li id="all" class="menu">
+          <a href="all.html">WSZYSTKIE</a>
+        </li>
+      </ul>
+    </menu>
+  </header>
+  <div class="prop"><div><p>Proponujemy 3 losowo wybrane filmy</p></div></div>
+  <div class="divSlider sliderUp">
+    <section class="slider visible">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
+        <div class="carousel-inner innerUp">
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+  </div>
+
+
+  <section id="randomMovies"></section>
+
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="info">
+            <h6 class="movieType"></h6>
+            <h6 class="movieYear"></h6>
+            <h6 class="movieNomination"></h6>
+            <a class="movieUrl">Link do FilmWebu</a>
+          </div>
+          <div>
+            <img class="movieImg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div>
+      <p>Created by Agata Romanska and Maciej Saran &#174; All Right Reserved</p>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+  <script src="js/out.js"></script>
+</body>
+
+</html>

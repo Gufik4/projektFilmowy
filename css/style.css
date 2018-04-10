@@ -138,3 +138,9 @@ li a {
   width: 100%;
   background-size: cover;
 }
+
+/* zaznaczony link */
+.active {
+  font-size: 1.1em;
+  font-weight: bold;
+  }

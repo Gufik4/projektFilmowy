@@ -2,50 +2,130 @@ $(function () {
 
 
     // listy rozwijane - wyjezdzanie
-
-    // gatunek
-
-    $('.right').find('.list1').hide();
-    $('.gatunek').on('click', function () {
-        $('.right').find('.list1').toggle('show');
-
-    });
-
-    // lata
-
-    $('.right').find('.list2').hide();
-    $('.lata').on('click', function () {
-        $('.right').find('.list2').toggle('show');
-    });
-
-
-    // mominacje
-
-    $('.right').find('.list3').hide();
-    $('.nominacje').on('click', function () {
-        $('.right').find('.list3').toggle('show');
-    });
-
-
     $('.list').hide();
     $('span').on('click', (e) => {
+
         $('.list').hide(500);
         $(e.target).parent().next().children().show(500);
     });
 
-    // API
-    //do kategorii gatunek
+    //zaznacza kliknięte linki - w css jest ta klasa ostylowana
+    $(".change").on('click', function () {
+        $('.slider').removeClass('hidden');
+        $(this).toggleClass("active");
+    });
 
+    $(".menu").find("a").on('click', function () {
+        $(this).addClass("active");
+    });
+
+    // dane z API
     var url = "http://localhost:3000/movies";
     var changeParam = $(".change");
+
+    // wybieranie wszystkich filmów i wrzucanie ich do slidera
+    let sectionAll = $("#allMovies");
+    if (sectionAll.length > 0) {
+        let slider = $("#slider");
+        let innerSlider = $(".carousel-inner");
+
+        $(innerSlider)[0].innerHTML = "";
+        $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "jsonp"
+        }).done((response) => {
+            var counter = response.length;
+            $(".counter").text(counter);
+            let arrayImg = [];
+            let carouselItem = null;
+            response.map((e, i) => {
+                arrayImg.push(e.images);
+                if (i == 0) {
+                    carouselItem = $('<div class="carousel-item active">');
+                } else {
+                    carouselItem = $('<div class="carousel-item">');
+                }
+                let img = $('<img class="d-block">');
+                img.attr('src', e.images);
+                carouselItem.append(img);
+                innerSlider.append(carouselItem);
+                img.on("click", function () {
+                    $(".modal-title").text(e.title);
+                    $(".movieType").text(e.type);
+                    $(".movieYear").text(e.year);
+                    $(".movieNomination").text(e.nominations);
+                    $(".movieUrl").attr('href', e.urlFilmWeb);
+                    $(".movieImg").attr('src', e.images)
+                    $("#exampleModalCenter").modal("show");
+                });
+            });
+
+        }).fail((error) => {
+            alert("Błąd serwera... Postaramy się naprawić błąd wkrótce!");
+        });
+
+    }
+
+    //losowanie 3 filmów z całego jsona i wrzucanieich do slidera
+    let sectionRandom = $("#randomMovies");
+    if (sectionRandom.length > 0) {
+        //ta funkcja miesza tablicę
+        function shuffle(a) {
+            for (var i = a.length; i; i--) {
+                var j = Math.floor(Math.random() * i);
+                [a[i - 1], a[j]] = [a[j], a[i - 1]];
+            }
+        }
+
+        let slider = $("#slider");
+        let innerSlider = $(".carousel-inner");
+        $(innerSlider)[0].innerHTML = "";
+        $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "jsonp"
+        }).done((response) => {
+
+            var myArray = response;
+            shuffle(myArray);
+            var arrayRandom = [myArray[0], myArray[1], myArray[2]];
+
+            let carouselItem = null;
+            arrayRandom.map((e, i) => {
+
+                if (i == 0) {
+                    carouselItem = $('<div class="carousel-item active">');
+                } else {
+                    carouselItem = $('<div class="carousel-item">');
+                }
+                let img = $('<img class="d-block">');
+                img.attr('src', e.images);
+                carouselItem.append(img);
+                innerSlider.append(carouselItem);
+                img.on("click", function () {
+                    $(".modal-title").text(e.title);
+                    $(".movieType").text(e.type);
+                    $(".movieYear").text(e.year);
+                    $(".movieNomination").text(e.nominations);
+                    $(".movieUrl").attr('href', e.urlFilmWeb);
+                    $(".movieImg").attr('src', e.images)
+                    $("#exampleModalCenter").modal("show");
+                });
+            });
+
+        }).fail((error) => {
+            alert("Błąd serwera... Postaramy się naprawić błąd wkrótce!");
+        });
+
+
+    }
 
     var types = [];
     var years = [];
     var nominations = [];
-    var all = [];
-    
+
     changeParam.on("click", function () {
-        // console.log($(this).data());
         let dataType = $(this).data("type");
         let dataValue = $(this).data("value");
         if (dataType == "genre") {
@@ -72,10 +152,9 @@ $(function () {
         }
 
         nominations.sort();
-        //console.log(nominations);
         let urlParams = '?';
-       
-        
+
+
 
         years.forEach(year => {
             urlParams += urlParams == "?" ? "years=" + year : '&years=' + year;
@@ -84,36 +163,35 @@ $(function () {
             urlParams += urlParams == "?" ? "type=" + type : '&type=' + type;
         });
         nominations.forEach((nomination, index) => {
-            // urlParams += urlParams=="?" ? "type="+type : '&type='+type;
             urlParams += urlParams == "?" ? "nominations=" + nomination : '&nominations=' + nomination;
         });
         if (nominations.length > 1) {
             urlParams += nominations.length > 0 ? '&nominations=' : '';
             nominations.forEach((nomination, index) => {
-                // urlParams += urlParams=="?" ? "type="+type : '&type='+type;
                 urlParams += index == 0 ? nomination : ',' + nomination;
             });
         }
 
-       
 
-        var slider = $("#slider");
 
-        if (types.length==0&&years.length==0&&nominations.length==0) {
+        let slider = $("#slider");
+
+        if (types.length == 0 && years.length == 0 && nominations.length == 0) {
             slider.hide();
-        }else {
+        } else {
             slider.show();
         }
 
 
-        var innerSlider = $(".carousel-inner");
+        let innerSlider = $(".carousel-inner");
         $(innerSlider)[0].innerHTML = "";
         $.ajax({
             url: url + urlParams,
             method: "GET",
-            dataType: "json"
+            dataType: "jsonp"
         }).done((response) => {
-
+            var counter = response.length;
+            $(".counter").text(counter);
             var arrayImg = [];
             let carouselItem = null;
             response.map((e, i) => {
@@ -127,14 +205,31 @@ $(function () {
                 img.attr('src', e.images);
                 carouselItem.append(img);
                 innerSlider.append(carouselItem);
-               
+                img.on("click", function () {
+                    $(".modal-title").text(e.title);
+                    $(".movieType").text(e.type);
+                    $(".movieYear").text(e.year);
+                    $(".movieNomination").text(e.nominations);
+                    $(".movieUrl").attr('href', e.urlFilmWeb);
+                    $(".movieImg").attr('src', e.images)
+                    $("#exampleModalCenter").modal("show");
+                });
             });
 
-
         }).fail((error) => {
-            console.log("err");
+            alert("Błąd serwera... Postaramy się naprawić błąd wkrótce!");
         });
-       
+
+
+    });
+
+    $(".button").on('click', function () {
+        $(".slider").toggleClass("activeSlider");
+        $("#choice").hide();
+    });
+
+    $(".gatunek").on('click', function () {
+        $(".genreList").toggleClass("hiddenList");
     });
 
 });
